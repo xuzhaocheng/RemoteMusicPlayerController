@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B4094291A24E1DF00654A84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4094281A24E1DF00654A84 /* main.m */; };
+		6B40942C1A24E1DF00654A84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B40942B1A24E1DF00654A84 /* AppDelegate.m */; };
+		6B40942F1A24E1DF00654A84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B40942E1A24E1DF00654A84 /* ViewController.m */; };
+		6B4094321A24E1DF00654A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4094301A24E1DF00654A84 /* Main.storyboard */; };
+		6B4094341A24E1DF00654A84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4094331A24E1DF00654A84 /* Images.xcassets */; };
+		6B4094371A24E1DF00654A84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B4094351A24E1DF00654A84 /* LaunchScreen.xib */; };
+		6B4094431A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4094421A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B40943D1A24E1DF00654A84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B40941B1A24E1DF00654A84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B4094221A24E1DF00654A84;
+			remoteInfo = RemoteMusicPlayerControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B4094231A24E1DF00654A84 /* RemoteMusicPlayerControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteMusicPlayerControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4094271A24E1DF00654A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B4094281A24E1DF00654A84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B40942A1A24E1DF00654A84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B40942B1A24E1DF00654A84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B40942D1A24E1DF00654A84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B40942E1A24E1DF00654A84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B4094311A24E1DF00654A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B4094331A24E1DF00654A84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6B4094361A24E1DF00654A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6B40943C1A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteMusicPlayerControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4094411A24E1DF00654A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B4094421A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteMusicPlayerControllerDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B4094201A24E1DF00654A84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4094391A24E1DF00654A84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B40941A1A24E1DF00654A84 = {
+			isa = PBXGroup;
+			children = (
+				6B4094251A24E1DF00654A84 /* RemoteMusicPlayerControllerDemo */,
+				6B40943F1A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests */,
+				6B4094241A24E1DF00654A84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B4094241A24E1DF00654A84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B4094231A24E1DF00654A84 /* RemoteMusicPlayerControllerDemo.app */,
+				6B40943C1A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B4094251A24E1DF00654A84 /* RemoteMusicPlayerControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6B40942A1A24E1DF00654A84 /* AppDelegate.h */,
+				6B40942B1A24E1DF00654A84 /* AppDelegate.m */,
+				6B40942D1A24E1DF00654A84 /* ViewController.h */,
+				6B40942E1A24E1DF00654A84 /* ViewController.m */,
+				6B4094301A24E1DF00654A84 /* Main.storyboard */,
+				6B4094331A24E1DF00654A84 /* Images.xcassets */,
+				6B4094351A24E1DF00654A84 /* LaunchScreen.xib */,
+				6B4094261A24E1DF00654A84 /* Supporting Files */,
+			);
+			path = RemoteMusicPlayerControllerDemo;
+			sourceTree = "<group>";
+		};
+		6B4094261A24E1DF00654A84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B4094271A24E1DF00654A84 /* Info.plist */,
+				6B4094281A24E1DF00654A84 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B40943F1A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B4094421A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.m */,
+				6B4094401A24E1DF00654A84 /* Supporting Files */,
+			);
+			path = RemoteMusicPlayerControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		6B4094401A24E1DF00654A84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B4094411A24E1DF00654A84 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B4094221A24E1DF00654A84 /* RemoteMusicPlayerControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B4094461A24E1DF00654A84 /* Build configuration list for PBXNativeTarget "RemoteMusicPlayerControllerDemo" */;
+			buildPhases = (
+				6B40941F1A24E1DF00654A84 /* Sources */,
+				6B4094201A24E1DF00654A84 /* Frameworks */,
+				6B4094211A24E1DF00654A84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteMusicPlayerControllerDemo;
+			productName = RemoteMusicPlayerControllerDemo;
+			productReference = 6B4094231A24E1DF00654A84 /* RemoteMusicPlayerControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B40943B1A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B4094491A24E1DF00654A84 /* Build configuration list for PBXNativeTarget "RemoteMusicPlayerControllerDemoTests" */;
+			buildPhases = (
+				6B4094381A24E1DF00654A84 /* Sources */,
+				6B4094391A24E1DF00654A84 /* Frameworks */,
+				6B40943A1A24E1DF00654A84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B40943E1A24E1DF00654A84 /* PBXTargetDependency */,
+			);
+			name = RemoteMusicPlayerControllerDemoTests;
+			productName = RemoteMusicPlayerControllerDemoTests;
+			productReference = 6B40943C1A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B40941B1A24E1DF00654A84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = xuzhaocheng;
+				TargetAttributes = {
+					6B4094221A24E1DF00654A84 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					6B40943B1A24E1DF00654A84 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 6B4094221A24E1DF00654A84;
+					};
+				};
+			};
+			buildConfigurationList = 6B40941E1A24E1DF00654A84 /* Build configuration list for PBXProject "RemoteMusicPlayerControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B40941A1A24E1DF00654A84;
+			productRefGroup = 6B4094241A24E1DF00654A84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B4094221A24E1DF00654A84 /* RemoteMusicPlayerControllerDemo */,
+				6B40943B1A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B4094211A24E1DF00654A84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4094321A24E1DF00654A84 /* Main.storyboard in Resources */,
+				6B4094371A24E1DF00654A84 /* LaunchScreen.xib in Resources */,
+				6B4094341A24E1DF00654A84 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B40943A1A24E1DF00654A84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B40941F1A24E1DF00654A84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B40942F1A24E1DF00654A84 /* ViewController.m in Sources */,
+				6B40942C1A24E1DF00654A84 /* AppDelegate.m in Sources */,
+				6B4094291A24E1DF00654A84 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4094381A24E1DF00654A84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4094431A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B40943E1A24E1DF00654A84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B4094221A24E1DF00654A84 /* RemoteMusicPlayerControllerDemo */;
+			targetProxy = 6B40943D1A24E1DF00654A84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B4094301A24E1DF00654A84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B4094311A24E1DF00654A84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B4094351A24E1DF00654A84 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B4094361A24E1DF00654A84 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B4094441A24E1DF00654A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B4094451A24E1DF00654A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B4094471A24E1DF00654A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RemoteMusicPlayerControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B4094481A24E1DF00654A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RemoteMusicPlayerControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6B40944A1A24E1DF00654A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RemoteMusicPlayerControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteMusicPlayerControllerDemo.app/RemoteMusicPlayerControllerDemo";
+			};
+			name = Debug;
+		};
+		6B40944B1A24E1DF00654A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RemoteMusicPlayerControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteMusicPlayerControllerDemo.app/RemoteMusicPlayerControllerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B40941E1A24E1DF00654A84 /* Build configuration list for PBXProject "RemoteMusicPlayerControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4094441A24E1DF00654A84 /* Debug */,
+				6B4094451A24E1DF00654A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B4094461A24E1DF00654A84 /* Build configuration list for PBXNativeTarget "RemoteMusicPlayerControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4094471A24E1DF00654A84 /* Debug */,
+				6B4094481A24E1DF00654A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6B4094491A24E1DF00654A84 /* Build configuration list for PBXNativeTarget "RemoteMusicPlayerControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B40944A1A24E1DF00654A84 /* Debug */,
+				6B40944B1A24E1DF00654A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B40941B1A24E1DF00654A84 /* Project object */;
+}
