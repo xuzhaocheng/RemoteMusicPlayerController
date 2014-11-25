@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		6B4094291A24E1DF00654A84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4094281A24E1DF00654A84 /* main.m */; };
 		6B40942C1A24E1DF00654A84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B40942B1A24E1DF00654A84 /* AppDelegate.m */; };
-		6B40942F1A24E1DF00654A84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B40942E1A24E1DF00654A84 /* ViewController.m */; };
-		6B4094321A24E1DF00654A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4094301A24E1DF00654A84 /* Main.storyboard */; };
 		6B4094341A24E1DF00654A84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4094331A24E1DF00654A84 /* Images.xcassets */; };
 		6B4094371A24E1DF00654A84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B4094351A24E1DF00654A84 /* LaunchScreen.xib */; };
 		6B4094431A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4094421A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.m */; };
+		6B40944F1A24E23200654A84 /* RemoteMusicPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B40944E1A24E23200654A84 /* RemoteMusicPlayerController.m */; };
+		6B4094521A24E24B00654A84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4094511A24E24B00654A84 /* ViewController.m */; };
+		6B4094551A24E27500654A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4094531A24E27500654A84 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		6B4094281A24E1DF00654A84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B40942A1A24E1DF00654A84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B40942B1A24E1DF00654A84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6B40942D1A24E1DF00654A84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6B40942E1A24E1DF00654A84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6B4094311A24E1DF00654A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B4094331A24E1DF00654A84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6B4094361A24E1DF00654A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6B40943C1A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteMusicPlayerControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4094411A24E1DF00654A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B4094421A24E1DF00654A84 /* RemoteMusicPlayerControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteMusicPlayerControllerDemoTests.m; sourceTree = "<group>"; };
+		6B40944D1A24E23200654A84 /* RemoteMusicPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteMusicPlayerController.h; sourceTree = "<group>"; };
+		6B40944E1A24E23200654A84 /* RemoteMusicPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteMusicPlayerController.m; sourceTree = "<group>"; };
+		6B4094501A24E24B00654A84 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B4094511A24E24B00654A84 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B4094541A24E27500654A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +86,12 @@
 			children = (
 				6B40942A1A24E1DF00654A84 /* AppDelegate.h */,
 				6B40942B1A24E1DF00654A84 /* AppDelegate.m */,
-				6B40942D1A24E1DF00654A84 /* ViewController.h */,
-				6B40942E1A24E1DF00654A84 /* ViewController.m */,
-				6B4094301A24E1DF00654A84 /* Main.storyboard */,
+				6B4094531A24E27500654A84 /* Main.storyboard */,
+				6B4094501A24E24B00654A84 /* ViewController.h */,
+				6B4094511A24E24B00654A84 /* ViewController.m */,
 				6B4094331A24E1DF00654A84 /* Images.xcassets */,
 				6B4094351A24E1DF00654A84 /* LaunchScreen.xib */,
+				6B40944C1A24E23200654A84 /* RemoteMusicPlayerController */,
 				6B4094261A24E1DF00654A84 /* Supporting Files */,
 			);
 			path = RemoteMusicPlayerControllerDemo;
@@ -117,6 +121,15 @@
 				6B4094411A24E1DF00654A84 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B40944C1A24E23200654A84 /* RemoteMusicPlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				6B40944D1A24E23200654A84 /* RemoteMusicPlayerController.h */,
+				6B40944E1A24E23200654A84 /* RemoteMusicPlayerController.m */,
+			);
+			path = RemoteMusicPlayerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B4094321A24E1DF00654A84 /* Main.storyboard in Resources */,
+				6B4094551A24E27500654A84 /* Main.storyboard in Resources */,
 				6B4094371A24E1DF00654A84 /* LaunchScreen.xib in Resources */,
 				6B4094341A24E1DF00654A84 /* Images.xcassets in Resources */,
 			);
@@ -219,8 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B40942F1A24E1DF00654A84 /* ViewController.m in Sources */,
 				6B40942C1A24E1DF00654A84 /* AppDelegate.m in Sources */,
+				6B40944F1A24E23200654A84 /* RemoteMusicPlayerController.m in Sources */,
+				6B4094521A24E24B00654A84 /* ViewController.m in Sources */,
 				6B4094291A24E1DF00654A84 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,20 +258,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6B4094301A24E1DF00654A84 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6B4094311A24E1DF00654A84 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6B4094351A24E1DF00654A84 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6B4094361A24E1DF00654A84 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6B4094531A24E27500654A84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B4094541A24E27500654A84 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
