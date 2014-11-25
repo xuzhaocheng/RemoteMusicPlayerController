@@ -66,6 +66,7 @@ static const NSString *PlayerRateContext;
 
 - (void)loadAssetWithURLString:(NSString *)urlString
 {
+    [self syncUI];
     NSURL *url = [NSURL URLWithString:urlString];
     
     AVAsset *asset = [AVAsset assetWithURL:url];
