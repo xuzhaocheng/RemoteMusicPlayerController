@@ -7,6 +7,7 @@
 //
 
 #import "RemoteMusicPlayerController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface RemoteMusicPlayerController ()
 
@@ -28,6 +29,24 @@ static const NSString *PlayerRateContext;
 @implementation RemoteMusicPlayerController
 
 #pragma mark - Properties
+- (void)setEnableBackgroundMode:(BOOL)enableBackgroundMode
+{
+    _enableBackgroundMode = enableBackgroundMode;
+    if (_enableBackgroundMode) {
+        [self enableBackgroundPlaying];
+    } else {
+        [self disableBackgroundPlaying];
+    }
+}
+
+- (void)setArtworkInfo:(NSDictionary *)artworkInfo
+{
+    _artworkInfo = artworkInfo;
+    if ([MPNowPlayingInfoCenter class]) {
+        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:artworkInfo];
+    }
+}
+
 - (UIColor *)disabledColor
 {
     if (!_disabledColor) {
@@ -44,7 +63,18 @@ static const NSString *PlayerRateContext;
     return _enabledColor;
 }
 
+
 #pragma mark - Life Cycle
+
+- (id)initWithBackgroundModeEnabled:(BOOL)enabled
+{
+    self = [super init];
+    if (self) {
+        self.enableBackgroundMode = enabled;
+    }
+    return self;
+}
+
 - (void)dealloc
 {
     [self removePlayerTimeObserver];
@@ -56,7 +86,7 @@ static const NSString *PlayerRateContext;
         [self.playerItem removeObserver:self forKeyPath:kStatusKey context:&ItemStatusContext];
     }
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.playerItem];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     
     NSLog(@"Player dealloc");
 }
@@ -191,6 +221,114 @@ static const NSString *PlayerRateContext;
         [self.player seekToTime:CMTimeMakeWithSeconds(time, NSEC_PER_SEC)];
     }
 }
+
+
+#pragma mark - Background Playing
+- (void)enableBackgroundPlaying
+{
+    NSError *sessionError = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord
+                                     withOptions:AVAudioSessionCategoryOptionDefaultToSpeaker
+                                           error:&sessionError];
+    if (sessionError) {
+        NSLog(@"Cannot enable background playing mode. Error: %@", sessionError);
+        return;
+    }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleInterruption:)
+                                                 name:AVAudioSessionInterruptionNotification
+                                               object:[AVAudioSession sharedInstance]];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleMediaServicesReset:)
+                                                 name:AVAudioSessionMediaServicesWereResetNotification
+                                               object:[AVAudioSession sharedInstance]];
+}
+
+- (void)disableBackgroundPlaying
+{
+    NSError *sessionError = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategorySoloAmbient
+                                     withOptions:AVAudioSessionCategoryOptionMixWithOthers
+                                           error:&sessionError];
+    if (sessionError) {
+        NSLog(@"Cannot disable background playing mode. Error: %@", sessionError);
+        return;
+    }
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:AVAudioSessionInterruptionNotification
+                                                  object:[AVAudioSession sharedInstance]];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:AVAudioSessionMediaServicesWereResetNotification
+                                                  object:[AVAudioSession sharedInstance]];
+    
+}
+
+#pragma mark -AVAudioSession Notifications
+- (void)handleInterruption: (NSNotification *)notification
+{
+    NSNumber *interruptionType = [[notification userInfo] objectForKey:AVAudioSessionInterruptionTypeKey];
+    NSNumber *interruptionOption = [[notification userInfo] objectForKey:AVAudioSessionInterruptionOptionKey];
+    
+    switch (interruptionType.unsignedIntegerValue) {
+        case AVAudioSessionInterruptionTypeBegan:{
+            // • Audio has stopped, already inactive
+            // • Change state of UI, etc., to reflect non-playing state
+            [self syncUI];
+        } break;
+        case AVAudioSessionInterruptionTypeEnded:{
+            // • Make session active
+            // • Update user interface
+            // • AVAudioSessionInterruptionOptionShouldResume option
+            if (interruptionOption.unsignedIntegerValue == AVAudioSessionInterruptionOptionShouldResume) {
+                // Here you should continue playback.
+                [self.player play];
+            }
+        } break;
+        default:
+            break;
+    }
+}
+
+- (void)handleMediaServicesReset:(NSNotification *)notification
+{
+    // • No userInfo dictionary for this notification
+    // • Audio streaming objects are invalidated (zombies)
+    // • Handle this notification by fully reconfiguring audio
+    self.playerItem = nil;
+    self.player = nil;
+    [self syncUI];
+}
+
+
+#pragma mark -Remote Control
+
+- (void)remoteControlReceivedWithEvent:(UIEvent *)receivedEvent
+{
+    if (receivedEvent.type == UIEventTypeRemoteControl) {
+        switch (receivedEvent.subtype) {
+            case UIEventSubtypeRemoteControlTogglePlayPause:
+                [self isPlaying] ? [self.player pause] : [self.player play];
+                break;
+            case UIEventSubtypeRemoteControlPlay:
+                [self.player play];
+                break;
+            case UIEventSubtypeRemoteControlPause:
+                [self.player pause];
+            case UIEventSubtypeRemoteControlBeginSeekingBackward:
+            case UIEventSubtypeRemoteControlEndSeekingBackward:
+            case UIEventSubtypeRemoteControlBeginSeekingForward:
+            case UIEventSubtypeRemoteControlEndSeekingForward:
+            case UIEventSubtypeRemoteControlNextTrack:
+            case UIEventSubtypeRemoteControlPreviousTrack:
+            case UIEventSubtypeRemoteControlStop:
+            default:
+                break;
+        }
+    }
+}
+
 
 #pragma mark - UI
 - (void)syncUI

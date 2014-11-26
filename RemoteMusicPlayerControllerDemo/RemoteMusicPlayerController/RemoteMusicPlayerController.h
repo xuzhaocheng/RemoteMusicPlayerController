@@ -27,6 +27,11 @@
 @property (nonatomic, strong) UIColor *disabledColor;
 @property (nonatomic, strong) UIColor *enabledColor;
 
+@property (nonatomic, strong) NSDictionary *artworkInfo;
+@property (nonatomic) BOOL enableBackgroundMode;
+
+- (id)initWithBackgroundModeEnabled:(BOOL)enabled;
+
 - (void)loadAssetWithURLString:(NSString *)urlString;
 - (void)play;
 - (void)pause;
@@ -37,5 +42,6 @@
 - (void)beginSliding:(UISlider *)slider;
 - (void)endSliding:(UISlider *)slider;
 - (void)sliding:(UISlider *)slider;
+- (void)remoteControlReceivedWithEvent:(UIEvent *)receivedEvent;
 
 @end

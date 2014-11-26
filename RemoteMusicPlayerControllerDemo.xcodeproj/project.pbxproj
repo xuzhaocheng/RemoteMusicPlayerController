@@ -181,6 +181,11 @@
 				TargetAttributes = {
 					6B4094221A24E1DF00654A84 = {
 						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					6B40943B1A24E1DF00654A84 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -428,6 +433,7 @@
 				6B4094481A24E1DF00654A84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B4094491A24E1DF00654A84 /* Build configuration list for PBXNativeTarget "RemoteMusicPlayerControllerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +442,7 @@
 				6B40944B1A24E1DF00654A84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
